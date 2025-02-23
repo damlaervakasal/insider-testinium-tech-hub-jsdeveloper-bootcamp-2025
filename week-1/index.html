@@ -3,9 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Slab&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>My favorite tv series</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
 </head>
 <body>
-    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu">
+                <a href="#section1">Home</a>
+                <a href="#section2">About</a>
+                <a href="#section3">Character</a>
+                <a href="#section4">Seasons</a>
+                <a href="#section5">Favorite Scene</a>
+            </div>
+            <div class="user-icon">
+                <i class="fas fa-user"></i> 
+            </div>
+        </nav>
+        <main>
+
+            <!-- Section 1 -->
+            <section id="section1" class="section section1">
+                <img src="assets/images/two.jpg" alt="Image" class="section-image">
+            </section>
+
+             <!-- Section 2 -->
+            <section id="section2" class="section section2">
+                <div class="modal">
+                    <div class="modal-content">
+                        <a href="https://www.imdb.com/title/tt0944947/" target="_blank">Game Of Thrones</a>
+                        <hr>
+                        <p>Game of Thrones is a television series based on the first book of George R. R. Martin's epic fantasy novel series, A Song of Ice and Fire. The show is set in the fictional continents of Westeros and Essos and features a large cast of characters. The main storyline revolves around the political conflicts among noble families vying for the Iron Throne or seeking independence from it in the Seven Kingdoms of Westeros. Another major storyline follows Daenerys Targaryen, the last surviving member of the deposed Targaryen dynasty, as she attempts to reclaim her family's lost power.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section 3 -->
+            <section id="section3" class="section section3">
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/cersei-lannister.png" alt="Card Image">
+                            </div>
+                            <div class="card-back">
+                                <h3>Cersei Lannister</h3>
+                                <p>Cersei is the matriarch of the Lannister family and initially sits on the throne as Queen. She ruthlessly protects her family's interests and will stop at nothing to keep her hold on power.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/jon-snow.png" alt="Card Image">
+                            </div>
+                            <div class="card-back">
+                                <h3>Jon Snow</h3>
+                                <p>Jon is raised as the adopted son of the Stark family and joins the Night's Watch in the North. When he learns his true identity, he plays a crucial role in the future of Westeros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/arya-shipIron-throne.png" alt="Card Image">
+                            </div>
+                            <div class="card-back">
+                                <h3>Arya Stark</h3>
+                                <p>Arya is the brave and independent daughter of the Stark family. After her family is wronged, she embarks on a journey for vengeance and learns masterful fighting techniques along the way.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/tyrion-lannister.png" alt="Card Image">
+                            </div>
+                            <div class="card-back">
+                                <h3>Tyrion Lannister</h3>
+                                <p>Tyrion is a witty and sarcastic character. The youngest member of the Lannister family, he becomes known for his political savvy and eventually rises to significant power.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/daenerys-season.jpg" alt="Card Image">
+                            </div>
+                            <div class="card-back">
+                                <h3>Daenerys Targaryen</h3>
+                                <p>Daenerys starts as the last member of the Targaryen dynasty and gradually becomes a powerful leader. Known as the Mother of Dragons, she aims to reclaim the throne of Westeros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/jaime-lannister.png" alt="Card Image">
+                            </div>
+                            <div class="card-back">
+                                <h3>Jaime Lannister</h3>
+                                <p>Jaime, Cersei's twin brother, is one of the Lannister family's best swordsmen. Initially portrayed as a villain, he undergoes significant character development and struggles with inner conflict.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <<!-- Section 4 -->
+            <section id="section4" class="section section4">
+                <div class="season-cards">
+
+                    <div class="season-card">
+                        <h2>Season 1 (2011)</h2>
+                        <p>Intrigues for the Iron Throne begin in Westeros. Ned Stark becomes the Hand of the King at Robert Baratheon's request but finds himself caught in a major conspiracy. The season ends with a shocking death.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 2 (2012)</h2>
+                        <p>The war for the Iron Throne begins. Robb Stark declares independence, while Stannis Baratheon attacks King's Landing. Daenerys gains power with her dragons, and Jon Snow faces dangers beyond the Wall.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 3</h2>
+                        <p>The Lannisters maintain their power while the Starks face difficulties. The infamous "Red Wedding" takes place, resulting in a brutal betrayal. Daenerys strengthens her army, and Jon Snow clashes with the Wildlings.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 4 (2014)</h2>
+                        <p>King Joffrey's wedding ends in his unexpected death. Tyrion Lannister is accused and faces grave danger. Daenerys struggles to rule the cities she has conquered. Jon Snow defends Castle Black against the Wildlings.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 5 (2015)</h2>
+                        <p>Jon Snow makes critical decisions at the Wall but is ultimately betrayed. Daenerys faces rebellions in Meereen. Arya Stark trains to become an assassin in Braavos. Cersei is imprisoned by the High Sparrow.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 6 (2016)</h2>
+                        <p>Jon Snow is resurrected and wins the "Battle of the Bastards" against Ramsay Bolton. Cersei eliminates her enemies in a massive explosion. Daenerys sets sail for Westeros. Bran Stark discovers the true threat of the Night King.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 7 (2017)</h2>
+                        <p>Daenerys arrives in Westeros and forms an alliance with Jon Snow. Dragons join the battle. The Night King captures a dragon and uses it to destroy the Wall, allowing the White Walkers to invade Westeros.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    </div>
+                    
+
+                    <div class="season-card">
+                        <h2>Season 8 (2019)</h2>
+                        <p>The war against the White Walkers ends with heavy losses. Daenerys burns down King's Landing, instilling fear. Jon Snow kills Daenerys. Bran Stark is chosen as king, Jon Snow is exiled, and a new order is established in Westeros.</p>
+                        <a href="https://www.primevideo.com/dp/0TXJUNC2OA279Y0UJZDK5GXAG6?&ref_=dvm_pds_tit_TR_lb_s_g_mkw_s-dc&mrntrk=pcrid_687335486532_slid__pgrid_153899473165_pgeo_9056761_x__adext__ptid_kwd-30094292123&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mkCi4k9u4Y5UavUaSPh2QlXZEXCuaIUDnK035ntLO5DedccrCakUaAtCIEALw_wcB&gclsrc=aw.ds" class="info-btn" target="_blank">Watch on Amazon Prime</a>
+                    
+                    </div> 
+                    
+            </section>
+         
+            <!-- Section 5 -->
+            <section id="section5" class="section section5">
+                <div class="trailer-grid">
+
+                    <div class="trailer-text">
+                        <h2>My Favorite Game of Thrones Scene</h2>
+                        <p>
+                            Arya Stark makes a final move against the Night King to protect Bran during the great battle at Winterfell. As the Night King approaches Bran, Arya silently comes from behind and suddenly stabs him in the heart with a Valyrian steel dagger. This move kills the Night King, and all the dead under his control are destroyed. Arya's brave and unexpected action changes the course of the war.
+                        </p>
+                    </div>
+
+                    <div class="trailer-video">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/hyNYN_SyYTY?si=fXKOqYfSsxof9UCF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+        </main>
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-left">
+                    <p>Damla Erva Kasal</p>
+                </div>
+
+                <div class="footer-center">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/damla-erva-kasal/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/damlaervakasal" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <a href="#">Insider&Testinium Tech Hub Bootcamp 2025</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
