@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Countdown</h1>
+        <div> 
+            <input type="number" id="minutes" min="0" placeholder="(dakika)">
+            <input type="number" id="seconds" min="0" placeholder="(saniye)"></div>
+        </div>
+        <br>
+        <br>
+        <div class="">
+            <p id="timer"></p>
+        </div>
+        <br>
+        <br>
+        <div class=""">
+            <button id="start" onclick="startCountdown()">Start</button>
+            <button id="stop" onclick="stopCountdown()">Stop</button>
+            <button id="reset" onclick="resetCountdown()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
