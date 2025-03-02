@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Slab&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="input-section">
+            <div class="trash-section">
+                <i class="fas fa-trash" id="openTrashModalBtn"></i>
+            </div>
+            <button id="openModalBtn">Add Task</button>
+        </div>
+
+        <div id="trashModal" class="modal">
+            <div class="modal-content">
+                <span class="close-trash">&times;</span>
+                <h2>Trash</h2>
+                <ul id="trashModalList"></ul>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <div class="todo-wrapper">
+                <h2 class="todo-title">Tasks</h2>
+                <div class="todo-section">
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+        
+            <div class="completed-wrapper">
+                <h2 class="completed-title">Completed</h2>
+                <div class="completed-section">
+                    <ul id="completed-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="taskModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Add New Task</h2>
+                <hr/>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <label for="task-title">Title </label>
+                        <input type="text" id="task-title" placeholder="Add title...">
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Priority </label>
+                        <div class="radio-group">
+                            <input type="radio" id="high" name="priority" value="High">
+                            <label for="high">High</label>
+        
+                            <input type="radio" id="medium" name="priority" value="Medium">
+                            <label for="medium">Medium</label>
+        
+                            <input type="radio" id="low" name="priority" value="Low">
+                            <label for="low">Low</label>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="task-desc">Description </label>
+                        <textarea id="task-desc" placeholder="Add description..."></textarea>
+                    </div>
+        
+                    <p id="error-message" class="error"></p>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div id="popup" class="popup"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
