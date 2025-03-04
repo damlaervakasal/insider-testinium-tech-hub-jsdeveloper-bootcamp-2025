@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <form id="studentForm">
+
+        <Label>Student Name:</Label>
+        <input type="text" id="studentName" name="studentName">
+
+        <Label>Student Surname:</Label>
+        <input type="text" id="studentSurname" name="studentSurname">
+
+        <Label>Student Age:</Label>
+        <input type="number" id="studentAge" name="studentAge" min="0">
+
+        <Label>Student Department:</Label>
+        <input type="text" id="studentDepartment" name="studentDepartment">
+
+        <Label>Student City:</Label>
+        <input type="text" id="studentCity" name="studentCity">
+        
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+    
+    
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Surname</th>
+                <th>Student Age</th>
+                <th>Student Department</th>
+                <th>Student City</th>
+                <th>Action</th>
+            </tr>
+        </thead>   
+        <tbody></tbody>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
