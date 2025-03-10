@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini e-commerce app</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">e-commerce</div>
+        <ul class="nav-links">
+            <li><a href="#section1">Carousel</a></li>
+            <li><a href="#section2">Slider</a></li>
+            <li><a href="#section3">Product</a></li>
+        </ul>
+        <div class="icons">
+            <i class="far fa-heart" id="favoritesIcon"></i>
+            <i class="fas fa-shopping-cart" id="cartIcon"></i>
+        </div>
+    </nav>
+    
+    <section id="section1">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="assets/images/carousel1.jpg" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/carousel2.jpg" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/carousel3.jpg" alt="Slide 3">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section2">
+        <div class="slider"
+        ></div>
+    </section>
+
+    <section id="section3">
+        <div class="container">
+            <h2>Products</h2>
+
+            <div class="filter-container">
+
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                   
+                </div>
+
+                <div class="sort-dropdown">
+                    <label for="sortOptions">Sort by:</label>
+                    <select id="sortOptions">
+                        <option value="default">Default</option>
+                        <option value="rating_asc">Rating (Low to High)</option>
+                        <option value="rating_desc">Rating (High to Low)</option>
+                        <option value="price_asc">Price (Low to High)</option>
+                        <option value="price_desc">Price (High to Low)</option>
+                    </select>
+                </div>
+            
+
+                <div class="category-dropdown">
+                    <label for="categoryFilter">Filter by Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+
+                <div class="search-container">
+                    <input type="number" id="productIdSearch" placeholder="Search by ID...">
+                </div>
+            </div>
+
+            <div id="productList" class="product-list"></div>
+        </div>
+    </section>
+
+
+    <div id="productDetailsModal" style="display: none;">
+        <div class="product-modal-container">
+            <div class="product-modal-header">
+                <h2>Product Details</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="product-modal-content">
+                <div class="modal-image">
+                    <img id="modalProductImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <p id="modalProductCategory"></p>
+                    <p id="modalProductDescription"></p>
+                    <p id="modalProductPrice"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="favoritesModal" style="display: none;">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Favorites</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div id="favoritesList">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="cartModal" style="display: none;">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>My Cart</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div id="cartList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
